@@ -1,0 +1,429 @@
+body {
+    font-family: 'Roboto', sans-serif;
+ }
+ 
+ /* Header */
+ header {
+     margin:0;
+     min-height: 52.5vh;
+     width: 100%;
+     height: 400px;
+ 
+     background-image: url("https://i.ibb.co/dpGr3Nv/Auditor-a.png");
+ 
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-attachment: fixed;
+     position: relative;  
+ }
+ 
+ header .textos-header{
+     display: flex;
+     height: 500px;
+     width: 100%;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     text-align: center;
+ }
+ 
+ .textos-header h1{
+     font-size: 50px;
+     color: #FEEE10;
+     z-index: 1;
+ }
+ 
+ .textos-header h2{
+     font-size: 25px;
+     font-weight: 300;
+     color:#fff;
+     z-index: 1;
+ }
+ 
+ .wave{
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+ }
+ 
+ @media screen and (max-width:440px){
+     .textos-header h1{
+         font-size: 30px
+     }
+     
+     .textos-header h2{
+         font-size: 15px
+     }
+ }
+ /* Fin Header */
+         
+ /*PIE DE PAGINA*/
+ footer{
+     width: 100%;
+     background: #6667A1;
+     color: #fff;
+     font-family: 'Roboto Condensed', sans-serif;
+ }
+ 
+ .container-footer-all{
+     width: 100%;
+     max-width: 1200px;
+     margin: auto;
+     padding: 40px;
+ }
+ 
+ .container-body{
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .colum1{
+     max-width: 400px;
+ }
+ 
+ .colum1 img{
+     width: 100%;
+     height: auto;
+ }
+ 
+ .colum2{
+     max-width: 400px;
+ }
+ 
+ .colum2 h1{
+ 
+     font-size: 22px;
+ }
+ 
+ .row{
+     margin-top: 20px;
+     display: flex;
+ }
+ 
+ .row i{
+     font-size: 25px;
+     width: 30px;
+     height: 15px;
+ }
+ 
+ .row label{
+     margin-top: 10px;
+     margin-left: 20px;
+     color: #fff;
+ }
+ 
+ .colum3{
+     max-width: 400px;
+ }
+ 
+ .colum3 h1{
+     font-size: 22px;
+ }
+ 
+ .row2{
+     margin-top: 20px;
+     display: flex;
+ }
+ 
+ .row2 i{
+     font-size: 25px;
+     width: 40px;
+     height: 30px;
+ }
+ 
+ .row2 img{
+     width: 36px;
+     height: 36px;
+ }
+ 
+ .row2 label{
+     margin-top: 10px;
+     margin-left: 20px;
+     max-width: 140px;
+ }
+ 
+ .container-footer{
+     width: 100%;  
+     background: #4F509D;
+ }
+ 
+ .footer{
+     max-width: 1200px;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;  
+     padding: 30px;
+ }
+ 
+ .copyright{
+     color: #fff;
+ }
+ 
+ .copyright a{
+     text-decoration: none;
+     color: white;
+     font-weight: bold;
+ }
+ 
+ .information a{
+     text-decoration: none;
+     color: #fff;
+ }
+ 
+ 
+ @media screen and (max-width: 1100px){
+     
+     .container-body{
+         flex-wrap: wrap;
+     }
+     
+     .colum1{
+         max-width: 100%;
+     }
+     
+     .colum2,
+     .colum3{
+         margin-top: 40px;
+     }
+ }    
+ /*FIN PIE DE PAGINA*/
+ 
+ /* CODIGO LIBRE */
+ 
+ a:-webkit-any-link {
+     color: #fff;
+     cursor: pointer;
+     text-decoration: none;
+ }
+ 
+ .colum1 p{
+     font-size: 18px;
+ }
+ 
+ /*FIN CODIGO LIBRE*/
+ 
+ /*BTN WSP 2*/
+ 
+ .float{
+     position:fixed;
+     width:60px;
+     height:60px;
+     bottom:40px;
+     right:40px;
+     background-color:#25d366;
+     color:#FFF;
+     border-radius:50px;
+     text-align:center;
+   font-size:30px;
+     box-shadow: 2px 2px 3px #999;
+   z-index:100;
+ }
+ .float:hover {
+     text-decoration: none;
+     color: #25d366;
+   background-color:#fff;
+ }
+ 
+ .my-float{
+     margin-top:16px;
+ }
+ /*FIN BTN WSP 2*/
+ 
+ /*IMAGENES SLIDER*/
+   .slider {
+     width: 60%;
+     padding: 20px 0;
+     height: auto;
+     margin: 0 auto 15px auto;
+     overflow: hidden;
+ }
+ 
+ .slider .slide-track {
+     display: flex;
+     animation: scroll 40s linear infinite;
+     -webkit-animation: scroll 40s linear infinite;
+     width: calc(200px * 14);
+ }
+ 
+ .slider .slide {
+     width: 180px;
+ }
+ 
+ .slider .slide img {
+     width: 90%;
+     height: 95%;
+     margin: auto 5px;
+ }
+ 
+ @keyframes scroll {
+     0% {
+         -webkit-transform: translateX(0);
+         transform: translateX(0);
+     }
+     100% {
+         -webkit-transform: translateX(calc(-200px * 7));
+         transform: translateX(calc(-200px * 7));
+     }
+ }
+ /*FIN CARUSEL IMAGENES*/
+ 
+ /*CONTENEDOR SERVICIOS*/
+ .cont_serv{
+     padding: 13px;
+ }
+ 
+ .cont_serv a{
+     color: #000;
+     font-family: 'Roboto Condensed', sans-serif;
+ }
+ .cont_serv a:hover{
+     color: #4F509D;
+ }
+ 
+ .cont_serv img{
+     width: 20px;
+     margin-right: 5px;
+ }
+ 
+ .grid_serv{
+     display: grid;
+     grid-template-columns: 50% 50%;
+     margin: 0;
+ }
+ 
+ .grid_serv .izq{
+     background-color: #000;
+     max-width: 1399px;
+     display: block;
+ }
+ 
+ .grid_serv .izq img{
+     max-width: 100%;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .txt_serv h4{
+     text-align: center;
+     font-family: 'Roboto Condensed', sans-serif;
+     width: 90%;
+     max-width: 1000px;
+     margin: 1px auto;
+ }
+ 
+ .txt_serv .separador{
+     border: none;
+     border-top: 5px solid #4F509D;
+     border-radius: 5px;
+     opacity: 1;
+     max-width: 200px;
+     margin: 0 auto;
+ }
+ 
+ .txt_serv p{
+     text-align: center;
+     font-family: 'Roboto Condensed', sans-serif;
+     margin: auto 8vh ;
+     padding: 10px 0;
+ }
+ 
+ .txt_serv{
+     width: 90%;
+     max-width: 1000px;
+     margin: auto;
+     overflow: hidden;
+ }
+ 
+ /*BENEFICIO SERVICIOS*/
+ 
+ 
+ /*FIN BENEFICIO SERVICIOS*/
+ 
+ /*CONTENEDORES EXTRAS*/
+     .contenedor {
+         padding: 60px 0;
+         width: 90%;
+         max-width: 1000px;
+         margin: auto;
+         overflow: hidden;
+     }
+ 
+     .bencon{
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         padding: 60px 0;
+         width: 100%;
+         max-width: auto;
+         overflow: hidden;
+     }
+ 
+     .casex{
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         margin: 0 auto;
+         padding: 60px 0;
+         width: 90%;
+         max-width: 1000px;
+         overflow: hidden;
+     }
+ /*FIN CONTENEDORES EXTRA*/
+ 
+ 
+ /*BENEFICIO DE NUESTROS SERVICIOS*/
+ 
+ 
+     .casex .g1{
+         padding: 0 10px;
+         margin: 50px;
+         width: 100%;
+     }
+     
+     .c1{
+         margin: auto 20px;
+     }
+       .bencon img{
+         width: 100%;
+         height: 100%;
+         margin: 0;
+         box-sizing: border-box;
+       }
+       
+ 
+       .bencon .txt_ben{
+         text-align: center;
+         font-family: 'Roboto Condensed', sans-serif;
+       }
+ 
+       @media screen and (max-width:767px){
+         .bencon{
+             display: inline-block;
+         }
+       }
+     
+       @media screen and (max-width:991px){
+         .bencon{
+             grid-template-columns: repeat(2, 1fr);
+         }
+       }
+ /*FIN BENEFICIO DE NUESTROS SERVICIOS*/    
+ 
+     .div_form{
+         margin:0;
+         min-height: 52.5vh;
+         width: 100%;
+         height: 600px;
+     
+         background-image: url("https://lh6.googleusercontent.com/F38dVtUqDNKRCG-0Htu8F231TqxbnzEvcUIGGPVj2BKB79hBEfCT-vD0ba_lN7-F7leTTw1m60KPJkq_uFYkkf9hVzcOiOSjdVzIuBRXJp-Hy6xt=w1280");
+     
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
+         background-attachment: fixed;
+         opacity: 0.5;
+     }
+ 
+ 
+ /*OLIVER*/
+ 
